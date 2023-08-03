@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const mysql = require('mysql2/promise');
 
-const port = 8080;
+const port =  process.env.Pgort || 8080;
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUI = require('swagger-ui-express');
 

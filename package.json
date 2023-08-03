@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha '__tests__/*.test.js' --reporter mochawesome --recursive  --timeout 60000 --exit",
-    "run": "node ./src/index.js"
+    "run": "node /src/index.js"
   },
   "author": "",
   "license": "ISC",
