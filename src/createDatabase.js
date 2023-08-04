@@ -1,4 +1,4 @@
-c// Import the 'connector' module to establish a database connection
+// Import the 'connector' module to establish a database connection
 let con = require('./connector');
 
 // Import the 'data' module that contains sample data for the orders
