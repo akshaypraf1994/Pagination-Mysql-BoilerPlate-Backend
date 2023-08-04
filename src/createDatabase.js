@@ -12,6 +12,7 @@ let a = async (err) => {
         // Drop the 'orders' table if it exists
         await new Promise((resolve, reject) => {
             con.query('DROP TABLE IF EXISTS orders', (err) => {
+               console.log('notable created');
                 if (err) reject(err)
                 else {
                     resolve(1)

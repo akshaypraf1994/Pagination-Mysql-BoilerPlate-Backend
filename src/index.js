@@ -6,7 +6,7 @@ const mysql = require('mysql2/promise');
 const port =  process.env.Port || 8080;
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUI = require('swagger-ui-express');
-
+require('dotenv').config()
 const swaggerOptions = {
   swaggerDefinition: {
     info: {
@@ -76,4 +76,4 @@ app.get('/api/orders', async (req, res) => {
 });
 
 // Start the Express app and listen on the specified port
-app.listen(port, () => console.log(`App listening on port ${port}!`));
+app.listen(port, () => console.log(`App listening on port ${process.env.Port}!`));

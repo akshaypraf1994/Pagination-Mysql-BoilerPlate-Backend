@@ -1,7 +1,6 @@
 // Import the 'mysql2' module for MySQL database connectivity
 var mysql = require('mysql2');
-import dotenv from "dotenv"
-dotenv.config();
+
 
 
 // Create a MySQL connection using connection parameters
