@@ -1,13 +1,16 @@
 // Import the 'mysql2' module for MySQL database connectivity
 var mysql = require('mysql2');
+import dotenv from "dotenv"
+dotenv.config();
+
 
 // Create a MySQL connection using connection parameters
 var con = mysql.createConnection({
-    host: "sql10.freemysqlhosting.net",
-    user: "sql10637439",
-    password: "qjzNdsAK9p",
-    database: "sql10637439",
-    port: 3306 // Port number for the MySQL server
+    host: "HOST12",
+    user: "USERNAME",
+    password: "PASSWORD1",
+    database: "DATABASE",
+    port:"PORT" // Port number for the MySQL server
 });
 
 // Establish a connection to the MySQL server
